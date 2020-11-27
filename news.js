@@ -33,7 +33,7 @@ function recent_post_start(json){
     recent_post_content();
 }
 function recent_post_text(){
-    var src = feed_url+"?alt=json-in-script&callback=recent_post_start&max-results=3";
+    var src = feed_url+"?alt=json-in-script&callback=recent_post_start&max-results="+latest_post;
     var s = "<script src='"+src+"'></script>";
     document.write(s);
 }
