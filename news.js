@@ -56,7 +56,7 @@ function recent_post_content(){
     s += "جديد الأخبار";
     s += "</div>";
     }
-    s += "  <marquee style='  display: block;width: 100%;overflow: hidden;animation: marquee 1s linear infinite;scrollAmount='"+scrolling_speed+"'>";
+    s += "  <marquee  direction='right' style='  display: block;width: 100%;overflow: hidden;animation: marquee 1s linear infinite;scrollAmount='"+scrolling_speed+"'>";
     for(var i=0; i<latest_post; i++){
         var recent_post_entries = entries[i];
         s += "<a href='"+recent_post_entries.href+"' ";
