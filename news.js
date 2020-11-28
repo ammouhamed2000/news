@@ -1,3 +1,13 @@
+/* Predefined Variables Are:
+ *     blog_url
+ *     latest_post
+ *     background_color
+ *     border_color
+ *     scrolling_speed
+ *     info_text
+ *     close_button
+ *     https://sharqawi-web.blogspot.com
+ */
 var entries; var feed;
 var feed_url = blog_url.match(/\/$/) ? blog_url : blog_url+"/";
 feed_url += "feeds/posts/default";
@@ -52,10 +62,10 @@ function recent_post_content(){
     if(info_text){
     s += "<div class='wrapper'>";
     s += "<div class='newstitle'>";
-    s += "جديد الأخبار";
+    s += "جديد الاخبار";
     s += "</div>";
     }
-    s += "  <marquee behavior='alternate' direction='right'  scrollAmount='"+scrolling_speed+"'>";
+    s += "  <marquee style='float:right; margin-right:10px; width:82%' scrollAmount='"+scrolling_speed+"'>";
     for(var i=0; i<latest_post; i++){
         var recent_post_entries = entries[i];
         s += "<a href='"+recent_post_entries.href+"' ";
