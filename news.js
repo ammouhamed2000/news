@@ -62,7 +62,7 @@ function w2bAdvRecentPostsScrollerv3(json) {
 		} else {
 			w2brecentposts = byWay2blogging ;
 		}
-		document.write("\<style style=\"text/css\"\>.way2blogging-srp a {color: #000000;text-decoration: none;font-size: 15px;font-weight: 400;}.way2blogging-srp{padding:15px;}\</style\>")
+		document.write("\<style style=\"text/css\"\>.way2blogging-srp a {color: #000000;text-decoration: none;font-size: 15px;font-weight: 400;}.way2blogging-srp{padding:15px;}.way2blogging-srp:before {content: 'جديد الأخبار';position: absolute;left: 15px;background: #b51200;color: #fff;padding: 3px 8px;top: 15px;z-index: 9;border-right: 5px solid;}.way2blogging-srp {position: relative;}\</style\>")
 		document.write("\<div class=\"way2blogging-srp\"\>" + w2bmarqueehtml + w2brecentposts + w2bmarqueehtml2 + "\</div\>")
 	} catch (exception) {
 		alert(exception);
